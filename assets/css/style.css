@@ -1,0 +1,48 @@
+/* RuralConnect design tokens + shared components */
+:root{--forest:#1e4d3b;--leaf:#2f7a57;--marigold:#f2a93b;--surface:#eef1ec;--ink:#17261f;--muted:#5d6b63;--line:#d9dfd8;--r:20px;
+ --bs-body-font-family:'Hanken Grotesk',system-ui,sans-serif;--bs-body-color:var(--ink);--bs-link-color:var(--leaf);--bs-link-hover-color:var(--forest)}
+body{background:#fff;font-size:1rem;line-height:1.55}
+h1,h2,h3,.display-font{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.01em}
+a{text-decoration-thickness:1px;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:2px}
+.btn{border-radius:999px;font-weight:600}
+.btn-rc{background:var(--forest);color:#fff;border:0}.btn-rc:hover{background:var(--leaf);color:#fff}
+.btn-outline-rc{border:1.5px solid var(--forest);color:var(--forest)}.btn-outline-rc:hover{background:var(--forest);color:#fff}
+.btn-gold{background:var(--marigold);color:var(--ink);border:0}.btn-gold:hover{background:#e29a2a}
+.btn-wa{background:#1da851;color:#fff}.btn-wa:hover{background:#168a42;color:#fff}
+.form-control,.form-select{border-radius:14px;border-color:#c3ccc4;padding:.6rem .9rem}
+.form-control:focus,.form-select:focus{border-color:var(--leaf);box-shadow:0 0 0 .2rem rgba(47,122,87,.2)}
+/* Header (two tiers, marketplace style) */
+.topline{background:var(--forest);color:#e7f1ea;font-size:.85rem}.topline a{color:#fff}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1030}
+.logo{display:flex;align-items:center;gap:.5rem;font-family:'Fraunces',serif;font-weight:700;font-size:1.45rem;color:var(--forest);text-decoration:none}
+.logo svg{width:34px;height:34px}.logo em{color:var(--leaf);font-weight:500}
+.search-bar{display:flex;flex:1;border:2px solid var(--forest);border-radius:999px;overflow:hidden;background:#fff}
+.search-bar select{border:0;background:var(--surface);padding:0 .8rem;max-width:170px;font-size:.9rem}
+.search-bar input{border:0;flex:1;padding:.55rem 1rem;min-width:0}.search-bar input:focus,.search-bar select:focus{outline:none}
+.search-bar button{border:0;background:var(--marigold);padding:0 1.2rem;font-size:1.1rem}
+.cat-nav{background:var(--surface);font-size:.92rem}.cat-nav a{color:var(--ink);text-decoration:none;padding:.5rem .85rem;display:inline-block;white-space:nowrap;border-radius:999px}.cat-nav a:hover{background:#fff}
+.cat-nav .scroll{display:flex;overflow-x:auto;scrollbar-width:none}
+/* Footer */
+.site-footer{background:var(--forest);color:#d7e6dc;border-radius:var(--r) var(--r) 0 0;margin-top:4rem;padding:3rem 0 1.5rem}
+.site-footer h2,.site-footer h3{color:#fff}.site-footer a{color:#d7e6dc;text-decoration:none}.site-footer a:hover{color:#fff;text-decoration:underline}
+.pill-link{display:inline-block;background:rgba(255,255,255,.1);border-radius:999px;padding:.35rem .9rem;margin:0 .35rem .5rem 0;font-size:.85rem}
+.social a{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);margin-right:.4rem}
+.demo-note{background:#fff7e0;border:1px dashed #d9a21b;border-radius:12px;padding:.5rem .9rem;font-size:.85rem}
+.stars{color:var(--marigold);font-size:.85rem;white-space:nowrap}
+.auth-card{max-width:460px;margin:3rem auto;background:var(--surface);border-radius:var(--r);padding:2rem}
+.tabs-role .nav-link{border-radius:999px;color:var(--ink)}.tabs-role .nav-link.active{background:var(--forest)}
+/* Minimal palette: neutrals + one deep-green accent */
+:root{--forest:#1f3d2f;--leaf:#2d5a45;--marigold:#1f3d2f;--surface:#f4f4f2;--line:#e3e3df}
+.btn-hdr{padding:.6rem 1.5rem}
+.btn-gold{background:#fff;color:#1a1a1a}.btn-gold:hover{background:#ececea;color:#1a1a1a}
+.cart-count{position:absolute;top:-6px;right:-6px;background:#1a1a1a;color:#fff;border-radius:999px;font-size:.7rem;min-width:20px;height:20px;display:grid;place-items:center;padding:0 5px}
+.cart-count[hidden]{display:none}
+.search-bar button{background:var(--forest);color:#fff}
+.topline{background:#1a1a1a}.site-footer{background:#1a1a1a}.sidebar.admin{background:#1a1a1a}
+.cart-list{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}.cart-row{display:flex;gap:1rem;padding:1rem;border-bottom:1px solid var(--line)}.cart-row:last-child{border:0}
+.cart-row img{width:110px;height:110px;object-fit:cover;border-radius:14px;background:var(--surface)}
+.cart-sum{background:var(--surface);border-radius:var(--r);padding:1.3rem;position:sticky;top:110px}
+.qty{display:inline-flex;align-items:center;border:1px solid #c9c9c4;border-radius:999px;background:#fff}.qty button{border:0;background:none;width:34px;height:34px;border-radius:50%}.qty button:disabled{opacity:.35}.qty span{min-width:28px;text-align:center}
+/* Product names: Arial everywhere */
+.pname,.pname a,.pbody h3,.pbody h3 a,h1.pname{font-family:Arial,sans-serif!important;letter-spacing:0}

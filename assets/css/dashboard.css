@@ -1,0 +1,17 @@
+/* Seller + platform-admin shell */
+.dash{display:grid;grid-template-columns:260px 1fr;min-height:100vh;background:#f6f8f5}
+.sidebar{background:var(--forest);color:#d7e6dc;padding:1.2rem;position:sticky;top:0;height:100vh;overflow:auto}
+.sidebar.admin{background:#243b53}
+.sidebar .logo{color:#fff;margin-bottom:1.5rem}.sidebar .logo em{color:var(--marigold)}
+.sidebar a.nav-link{color:#d7e6dc;border-radius:12px;padding:.6rem .8rem;display:flex;gap:.7rem;align-items:center}
+.sidebar a.nav-link:hover,.sidebar a.nav-link.active{background:rgba(255,255,255,.14);color:#fff}
+.dash-top{display:flex;align-items:center;gap:1rem;padding:.9rem 1.5rem;background:#fff;border-bottom:1px solid var(--line)}
+.dash-main{padding:1.5rem;min-width:0}
+.stat{background:#fff;border-radius:var(--r);padding:1.1rem 1.2rem;border:1px solid var(--line);height:100%}
+.stat .n{font-family:'Fraunces',serif;font-size:2rem;font-weight:600}.stat i{font-size:1.3rem;color:var(--leaf)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.3rem}
+.thumb-sm{width:48px;height:48px;border-radius:10px;object-fit:cover}
+.preview-img{width:96px;height:96px;object-fit:cover;border-radius:12px;margin:.5rem .5rem 0 0}
+.banner-preview{border-radius:var(--r);color:#fff;padding:2rem;background:linear-gradient(90deg,rgba(20,50,35,.9),rgba(20,50,35,.4)),#2f7a57;background-size:cover;min-height:180px}
+.banner-preview span{display:inline-block;background:var(--marigold);color:var(--ink);border-radius:999px;padding:.3rem 1rem;font-weight:600}
+.table>:not(caption)>*>*{vertical-align:middle}
